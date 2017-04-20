@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dave.calendar.DateActivity"
+    android:orientation="horizontal">
+
+    <com.example.dave.calendar.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:square_color="@color/squareColor"
+         />
+
+    <com.example.dave.calendar.CalendarView
+        android:id="@+id/calendarView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:square_color="@color/squareColor"
+        android:layout_marginLeft="200dp"
+        />
+
+    <Button
+        android:id="@+id/btn_shake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:text="Animate/Save"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="141dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Days Between :"
+        android:layout_below="@+id/calendarView"
+        android:layout_alignLeft="@+id/calendarView"
+        android:layout_alignStart="@+id/calendarView"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:id="@+id/outPut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_shake"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="23dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>

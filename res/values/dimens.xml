@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="text_size_large">60sp</dimen>
+    <integer name="scale_factorX">2</integer>
+    <integer name="scale_factorY">3</integer>
+</resources>
